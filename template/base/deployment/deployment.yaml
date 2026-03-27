@@ -20,7 +20,7 @@ spec:
       restartPolicy: Always
       containers:
       - name:  demo-app
-        image: harbor.vankeservice.com/demo/demo:latest
+        image: ${IMAGE_NAME}:${IMAGE_TAG}
         ports:
         - containerPort: 8081
           name: http
